@@ -1,0 +1,16 @@
+branding:
+  title: Aide Réseaux
+  logo: assets/logo.png
+
+editor:
+  enabled: false # Default is true
+
+exclude:
+  - "draft/"
+
+favicon: assets/logo.png
+
+footer:
+  links:
+    - text: Discord
+      link: https://discord.gg/reseaux
