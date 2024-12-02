@@ -1,0 +1,46 @@
+name: Correction
+description: Suggérez une nouvelle correction
+title: "[Suggestion]: Correction blog : (TITRE)"
+labels: ["correction"]
+assignees:
+  - WolfyzDBois
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # SSuggestion de correction
+  - type: input
+    id: title
+    attributes:
+      label: Titre de l'article
+      description: Quel sera le titre de cet article ?
+      placeholder: ex. "La configuration d'OBS"
+    validations:
+      required: true
+   type: input
+    id: contact
+    attributes:
+      label: Moyen de contact
+      description: Moyen de vous contacter pour discuter de vos modifications 
+      placeholder: ex. Pseudo Discord
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description rapide de la correction
+      description: En quoi consiste votre correction ?
+      placeholder: ex. "Cet article a des fautes de grammaires"      
+    validations:
+      required: true
+  - type: dropdown
+  id: type
+  attributes:
+    label: Quel est le type de correction ?
+    options:
+      - Style
+      - Grammaire & Orthographe
+      - Informations donnes (ajout et modif)
+      - Autres
+  validations:
+    required: true

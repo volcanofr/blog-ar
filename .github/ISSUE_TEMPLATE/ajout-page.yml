@@ -1,7 +1,7 @@
 name: Suggestion d'articles
-description: Suggérez des nouveaux articles à ajouter au Wiki Discord.fr
+description: Suggérez une nouvelle page sur le blog
 title: "[Suggestion]: Ajout de l'article (TITRE)"
-labels: ["ajout"]
+labels: ["Nouvelle page"]
 assignees:
   - WolfyzDBois
 body:
