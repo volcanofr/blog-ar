@@ -1,0 +1,27 @@
+name: Suggestion d'articles
+description: Suggérez des nouveaux articles à ajouter au Wiki Discord.fr
+title: "[Suggestion]: Ajout de l'article (TITRE)"
+labels: ["ajout"]
+assignees:
+  - WolfyzDBois
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Suggestion de page
+  - type: input
+    id: title
+    attributes:
+      label: Titre de l'article
+      description: Quel sera le titre de cet article ?
+      placeholder: ex. "La configuration d'OBS"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description de l'article
+      description: En quoi consiste cet article ?
+      placeholder: ex. "Cet article parlera de comment configurer correctement OBS pour le strean"      
+    validations:
+      required: true
